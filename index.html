@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>function</title>
+</head>
+<body>
+  <h1 id="display"></h1>
+  <button type="button" onclick="document.getElementById('display').innerHTML=new Date()">Show Date</button>
+
+  <div>
+    <input type="text" id="calculator" placeholder="0">
+    <button type="button" onclick="document.getElementById('calculator').value+='9'">9</button>
+    <button type="button" onclick="document.getElementById('calculator').value+='+'">+</button>
+    <button type="button" onclick="document.getElementById('calculator').value=eval(document.getElementById('calculator').value)">=</button>
+    <button type="button" onclick="document.getElementById('calculator').value=' '">C</button>
+  </div>
+
+  <script>
+    function sum(a,b){
+    
+      return a+b
+    }
+    console.log(sum(9,4))
+
+    function greeting(name){
+      console.log('hello '  + name);
+    }
+    
+    greeting('John')
+    greeting('Messi')
+
+  </script>
+</body>
+</html>
